@@ -54,10 +54,6 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void addTest(){
-    print("maseter");
-  }
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -106,10 +102,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: IconButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.ten_k,color: Colors.red,),
+        icon: Icon(Icons.ten_k,color: Colors.red,),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
